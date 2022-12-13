@@ -20,3 +20,9 @@
 sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
 
 # git clone https://github.com/small-5/luci-app-adblock-plus.git package/lean/luci-app-adblock-plus
+
+# openwrt 源
+# git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
+# Lean 源
+rm -rf package/feeds/luci/luci-theme-argon
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/feeds/luci/luci-theme-argon
