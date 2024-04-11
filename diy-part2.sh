@@ -12,3 +12,6 @@
 
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generate
+
+# 端口初始化
+cp -f $GITHUB_WORKSPACE/scripts/99-default_network package/base-files/files/etc/board.d/99-default_network
